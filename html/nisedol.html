@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../css/styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>니세돌 톡</title>
+</head>
+
+<body>
+    <!-- Top-Bar -->
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>RE:WIND</span>
+            <span class="nowTime">00:00</span>
+            <i class="fab fa-twitch"></i>
+        </div>
+        <div class="status-bar__column">
+            <i class="fas fa-wifi"></i>
+            <span>100%</span>
+            <i class="fas fa-battery-full" style="transform:rotate(270deg);"></i>
+        </div>
+    </div>
+    <!-- //Top-Bar -->
+
+    <!-- Header -->
+    <div class="screen-header">
+        <h1 class="screen-header__title">친구</h1>
+        <div class="screen-header__icons">
+            <span><i class="fas fa-search"></i></span>
+            <span><i class="fas fa-user-plus"></i></span>
+            <span><i class="fas fa-music"></i></span>
+            <span><i class="fas fa-cog"></i></span>
+        </div>
+    </div>
+    <!-- //Header -->
+
+    <!-- Screen -->
+    <div class="friends-screen">
+        <!-- User-Profile -->
+        <div class="user-profile">
+            <div class="user-profile-main-info">
+                <img class="user-profile__img" src="../image/logo.jpg">
+                <div class="user-profile-text">
+                    <span class="user-profile__name">오영택</span>
+                    <span class="user-profile__msg">스밍 킹아</span>
+                </div>
+            </div>
+
+            <div class="user-profile-music">
+                <span class="user-profile__music-name">RE:WIND</span>
+                <i class="fas fa-play"></i>
+            </div>
+        </div>
+        <!-- // User-Profile -->
+
+        <!-- User-Multi-Profile -->
+        <div class="user-multi-profile">
+            <div class="user-multi-profile-bar">
+                <span class="user-multi-profile-bar_name">내 멀티프로필</span>
+                <a id="user-multi-profile-bar-btn" onclick="userProfileShow();"><i class="fas fa-chevron-up"></i></a>
+            </div>
+            <div id="user-profile__sub">
+                <div class="user-profile-sub-info">
+                    <img class="user-profile__sub-img" src="../image/waklogo2.png">
+                    <span class="user-profile__sub-name">왁엔터</span>
+                </div>
+                <div class="user-profile-sub-info">
+                    <img class="user-profile__sub-img" src="../image/waklogo2.png">
+                    <span class="user-profile__sub-name">만들기</span>
+                </div>
+            </div>            
+        </div>
+        <!-- //User-Multi-Profile -->
+
+        <!-- Birtyday-User-->
+        <div class="birtyday-user-profile">
+            <div class="birtyday-user-profile-bar">
+                <span class="birtyday-user-profile-bar_name">생일인 친구</span>
+                <a id="birtyday-user-profile-bar-btn" onclick="birtydayShow();"><i class="fas fa-chevron-up"></i></a>
+            </div>
+            <div id="birtyday-user-profile__sub">
+                <div class="birtyday-user-profile__sub-info">
+                    <i class="fas fa-birthday-cake"></i>
+                    <span class="birtyday-user-profile__sub-text">친구의 생일을 확인해보세요!</span>
+                </div>
+                
+                <div class="birtyday-user-profile-number">
+                    <span>6</span>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+        </div>
+        <!-- //Birtyday-User-->
+        <div class="friends-user-profile">
+            <div class="friends-user-profile-bar">
+                <span class="friends-user-profile-bar_name">친구 6</span>
+                <a id="friends-user-profile-bar-btn" onclick="friendShow();"><i class="fas fa-chevron-up"></i></a>
+            </div>
+            
+            <div class="friends-user-profile-main-info">
+                <div class="friends-user-porifle-profile">
+                    <img class="friends-user-profile__img" src="../image/logo.jpg" style="width:52px">
+                    <div class="friends-user-profile-text">
+                        <span class="friends-user-profile__name">아이네</span>
+                        <span class="friends-user-profile__msg">비둘기단 구구구</span>
+                    </div>
+                </div>
+                <div class="user-profile-music">
+                    <span class="user-profile__music-name">RE:WIND</span>
+                    <i class="fas fa-play"></i>
+                </div>
+            </div>
+
+            <div class="friends-user-profile-main-info">
+                <div class="friends-user-porifle-profile">
+                    <img class="friends-user-profile__img" src="../image/logo.jpg" style="width:52px">
+                    <div class="friends-user-profile-text">
+                        <span class="friends-user-profile__name">아이네</span>
+                        <span class="friends-user-profile__msg">비둘기단 구구구</span>
+                    </div>
+                </div>
+                <div class="user-profile-music">
+                    <span class="user-profile__music-name">RE:WIND</span>
+                    <i class="fas fa-play"></i>
+                </div>
+            </div>
+            
+            <div class="friends-user-profile-main-info">
+                <div class="friends-user-porifle-profile">
+                    <img class="friends-user-profile__img" src="../image/logo.jpg" style="width:52px">
+                    <div class="friends-user-profile-text">
+                        <span class="friends-user-profile__name">아이네</span>
+                        <span class="friends-user-profile__msg">비둘기단 구구구</span>
+                    </div>
+                </div>
+                <div class="user-profile-music">
+                    <span class="user-profile__music-name">RE:WIND</span>
+                    <i class="fas fa-play"></i>
+                </div>
+            </div>
+
+            <div class="friends-user-profile-main-info">
+                <div class="friends-user-porifle-profile">
+                    <img class="friends-user-profile__img" src="../image/logo.jpg" style="width:52px">
+                    <div class="friends-user-profile-text">
+                        <span class="friends-user-profile__name">아이네</span>
+                        <span class="friends-user-profile__msg">비둘기단 구구구</span>
+                    </div>
+                </div>
+                <div class="user-profile-music">
+                    <span class="user-profile__music-name">RE:WIND</span>
+                    <i class="fas fa-play"></i>
+                </div>
+            </div>
+
+            <div class="friends-user-profile-main-info">
+                <div class="friends-user-porifle-profile">
+                    <img class="friends-user-profile__img" src="../image/logo.jpg" style="width:52px">
+                    <div class="friends-user-profile-text">
+                        <span class="friends-user-profile__name">아이네</span>
+                        <span class="friends-user-profile__msg">비둘기단 구구구</span>
+                    </div>
+                </div>
+                <div class="user-profile-music">
+                    <span class="user-profile__music-name">RE:WIND</span>
+                    <i class="fas fa-play"></i>
+                </div>
+            </div>
+
+            <div class="friends-user-profile-main-info">
+                <div class="friends-user-porifle-profile">
+                    <img class="friends-user-profile__img" src="../image/logo.jpg" style="width:52px">
+                    <div class="friends-user-profile-text">
+                        <span class="friends-user-profile__name">아이네</span>
+                        <span class="friends-user-profile__msg">비둘기단 구구구</span>
+                    </div>
+                </div>
+                <div class="user-profile-music">
+                    <span class="user-profile__music-name">RE:WIND</span>
+                    <i class="fas fa-play"></i>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- //Screen -->
+
+    <!-- Footer -->
+    <div class="screen-footer">
+        <div class="screen-footer-bar">
+            <i class="fas fa-user"></i>
+            <i class="far fa-comment"></i>
+            <i class="fas fa-search"></i>
+            <i class="fas fa-ellipsis-h"></i>
+    </div>
+    <!-- //Footer -->
+
+    <!-- Form -->
+    <!-- //Form -->
+    <!-- Scripts -->
+    <script src="/js/toggle.js"></script>
+    <script src="../js/time.js"></script>
+</body>
+
+</html>
