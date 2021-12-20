@@ -4209,7 +4209,9 @@ readers do not read off random characters that represent icons */
   content: "\f287"; }
 
 .fa-user:before {
-  content: "\f007"; }
+  content: "\f007";
+  font-size: 2;
+  }
 
 .fa-user-alt:before {
   content: "\f406"; }
@@ -4622,5 +4624,5 @@ readers do not read off random characters that represent icons */
 .fas {
   font-family: 'Font Awesome 5 Free';
   font-weight: 900;
-  font-size: 1;
+  font-size: ;
   }

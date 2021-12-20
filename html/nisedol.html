@@ -11,6 +11,17 @@
 </head>
 
 <body>
+
+    <!-- Big Screen -->
+    <div id="bigScreen">
+        <span>화면을 줄여주세요</span>
+    </div>
+    <!-- //Big Screen -->
+    
+    <div id="splash-screen">
+        <i class="fas fa-comment"></i>
+    </div>
+
     <!-- Top-Bar -->
     <div class="status-bar">
         <div class="status-bar__column">
@@ -60,7 +71,7 @@
         <!-- User-Multi-Profile -->
         <div class="user-multi-profile">
             <div class="user-multi-profile-bar">
-                <span class="user-multi-profile-bar_name">내 멀티프로필</span>
+                <span class="user-multi-profile-bar_name">내 멀티프로필 1</span>
                 <a id="user-multi-profile-bar-btn" onclick="userProfileShow();"><i class="fas fa-chevron-up"></i></a>
             </div>
             <div id="user-profile__sub">
@@ -100,110 +111,127 @@
                 <span class="friends-user-profile-bar_name">친구 6</span>
                 <a id="friends-user-profile-bar-btn" onclick="friendShow();"><i class="fas fa-chevron-up"></i></a>
             </div>
-            
-            <div class="friends-user-profile-main-info">
-                <div class="friends-user-porifle-profile">
-                    <img class="friends-user-profile__img" src="../image/logo.jpg" style="width:52px">
-                    <div class="friends-user-profile-text">
-                        <span class="friends-user-profile__name">아이네</span>
-                        <span class="friends-user-profile__msg">비둘기단 구구구</span>
+            <div id="friends-user-profile__sub">
+                <div class="friends-user-profile-main-info">
+                    <div class="friends-user-porifle-profile">
+                        <img class="friends-user-profile__img" src="../image/logo.jpg" style="width:52px">
+                        <div class="friends-user-profile-text">
+                            <span class="friends-user-profile__name">고세구</span>
+                            <span class="friends-user-profile__msg">고양이가 세상을 구한다</span>
+                        </div>
+                    </div>
+                    <div class="user-profile-music">
+                        <span class="user-profile__music-name">RE:WIND</span>
+                        <i class="fas fa-play"></i>
                     </div>
                 </div>
-                <div class="user-profile-music">
-                    <span class="user-profile__music-name">RE:WIND</span>
-                    <i class="fas fa-play"></i>
-                </div>
-            </div>
-
-            <div class="friends-user-profile-main-info">
-                <div class="friends-user-porifle-profile">
-                    <img class="friends-user-profile__img" src="../image/logo.jpg" style="width:52px">
-                    <div class="friends-user-profile-text">
-                        <span class="friends-user-profile__name">아이네</span>
-                        <span class="friends-user-profile__msg">비둘기단 구구구</span>
+                <div class="friends-user-profile-main-info">
+                    <div class="friends-user-porifle-profile">
+                        <img class="friends-user-profile__img" src="../image/logo.jpg" style="width:52px">
+                        <div class="friends-user-profile-text">
+                            <span class="friends-user-profile__name">비챤</span>
+                            <span class="friends-user-profile__msg">이세돌 제일검</span>
+                        </div>
+                    </div>
+                    <div class="user-profile-music">
+                        <span class="user-profile__music-name">RE:WIND</span>
+                        <i class="fas fa-play"></i>
                     </div>
                 </div>
-                <div class="user-profile-music">
-                    <span class="user-profile__music-name">RE:WIND</span>
-                    <i class="fas fa-play"></i>
-                </div>
-            </div>
-            
-            <div class="friends-user-profile-main-info">
-                <div class="friends-user-porifle-profile">
-                    <img class="friends-user-profile__img" src="../image/logo.jpg" style="width:52px">
-                    <div class="friends-user-profile-text">
-                        <span class="friends-user-profile__name">아이네</span>
-                        <span class="friends-user-profile__msg">비둘기단 구구구</span>
+                
+                <div class="friends-user-profile-main-info">
+                    <div class="friends-user-porifle-profile">
+                        <img class="friends-user-profile__img" src="../image/logo.jpg" style="width:52px">
+                        <div class="friends-user-profile-text">
+                            <span class="friends-user-profile__name">릴파</span>
+                            <span class="friends-user-profile__msg">릴파형동검</span>
+                        </div>
+                    </div>
+                    <div class="user-profile-music">
+                        <span class="user-profile__music-name">RE:WIND</span>
+                        <i class="fas fa-play"></i>
                     </div>
                 </div>
-                <div class="user-profile-music">
-                    <span class="user-profile__music-name">RE:WIND</span>
-                    <i class="fas fa-play"></i>
-                </div>
-            </div>
-
-            <div class="friends-user-profile-main-info">
-                <div class="friends-user-porifle-profile">
-                    <img class="friends-user-profile__img" src="../image/logo.jpg" style="width:52px">
-                    <div class="friends-user-profile-text">
-                        <span class="friends-user-profile__name">아이네</span>
-                        <span class="friends-user-profile__msg">비둘기단 구구구</span>
+    
+                <div class="friends-user-profile-main-info">
+                    <div class="friends-user-porifle-profile">
+                        <img class="friends-user-profile__img" src="../image/logo.jpg" style="width:52px">
+                        <div class="friends-user-profile-text">
+                            <span class="friends-user-profile__name">아이네</span>
+                            <span class="friends-user-profile__msg">비둘기야 밥먹자</span>
+                        </div>
+                    </div>
+                    <div class="user-profile-music">
+                        <span class="user-profile__music-name">RE:WIND</span>
+                        <i class="fas fa-play"></i>
                     </div>
                 </div>
-                <div class="user-profile-music">
-                    <span class="user-profile__music-name">RE:WIND</span>
-                    <i class="fas fa-play"></i>
-                </div>
-            </div>
-
-            <div class="friends-user-profile-main-info">
-                <div class="friends-user-porifle-profile">
-                    <img class="friends-user-profile__img" src="../image/logo.jpg" style="width:52px">
-                    <div class="friends-user-profile-text">
-                        <span class="friends-user-profile__name">아이네</span>
-                        <span class="friends-user-profile__msg">비둘기단 구구구</span>
+    
+                <div class="friends-user-profile-main-info">
+                    <div class="friends-user-porifle-profile">
+                        <img class="friends-user-profile__img" src="../image/logo.jpg" style="width:52px">
+                        <div class="friends-user-profile-text">
+                            <span class="friends-user-profile__name">주르르</span>
+                            <span class="friends-user-profile__msg">무7련</span>
+                        </div>
+                    </div>
+                    <div class="user-profile-music">
+                        <span class="user-profile__music-name">RE:WIND</span>
+                        <i class="fas fa-play"></i>
                     </div>
                 </div>
-                <div class="user-profile-music">
-                    <span class="user-profile__music-name">RE:WIND</span>
-                    <i class="fas fa-play"></i>
-                </div>
-            </div>
-
-            <div class="friends-user-profile-main-info">
-                <div class="friends-user-porifle-profile">
-                    <img class="friends-user-profile__img" src="../image/logo.jpg" style="width:52px">
-                    <div class="friends-user-profile-text">
-                        <span class="friends-user-profile__name">아이네</span>
-                        <span class="friends-user-profile__msg">비둘기단 구구구</span>
+    
+                <div class="friends-user-profile-main-info">
+                    <div class="friends-user-porifle-profile">
+                        <img class="friends-user-profile__img" src="../image/logo.jpg" style="width:52px">
+                        <div class="friends-user-profile-text">
+                            <span class="friends-user-profile__name">징버거</span>
+                            <span class="friends-user-profile__msg">해냈다 해냈어</span>
+                        </div>
+                    </div>
+                    <div class="user-profile-music">
+                        <span class="user-profile__music-name">RE:WIND</span>
+                        <i class="fas fa-play"></i>
                     </div>
                 </div>
-                <div class="user-profile-music">
-                    <span class="user-profile__music-name">RE:WIND</span>
-                    <i class="fas fa-play"></i>
-                </div>
             </div>
-
         </div>
     </div>
     <!-- //Screen -->
 
     <!-- Footer -->
     <div class="screen-footer">
-        <div class="screen-footer-bar">
-            <i class="fas fa-user"></i>
-            <i class="far fa-comment"></i>
-            <i class="fas fa-search"></i>
-            <i class="fas fa-ellipsis-h"></i>
+        <ul class="screen-footer-list"l>
+            <li class="screen-footer-btn">
+                <a class="screen-footer-link" href="nisedol.html">
+                    <i class="fas fa-user"></i>
+                </a>
+            </li>
+            <li class="screen-footer-btn">
+                <a class="screen-footer-link" href="nisedol.html">                    
+                    <i class="far fa-comment"></i>
+                    <span class="screen-footer__notification badge">6</span>
+                </a>
+            </li>
+            <li class="screen-footer-btn">
+                <a class="screen-footer-link" href="nisedol.html">
+                    <i class="fas fa-search"></i>
+                </a>
+            </li>
+            <li class="screen-footer-btn">
+                <a class="screen-footer-link" href="nisedol.html">
+                    <i class="fas fa-ellipsis-h"></i>
+                </a>
+            </li>
+        </ul>
     </div>
-    <!-- //Footer -->
-
-    <!-- Form -->
-    <!-- //Form -->
+    <!-- //Footer -->   
+    
+    
     <!-- Scripts -->
     <script src="/js/toggle.js"></script>
     <script src="../js/time.js"></script>
+    <script src="../js/screen.js"></script>
 </body>
 
 </html>

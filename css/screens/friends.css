@@ -3,12 +3,16 @@ body {
   max-width: 645px;
   min-height: 1024px;
   color: #2e363e;
+  -ms-overflow-style: none;
+}
+  ::-webkit-scrollbar {
+    display: none;
 }
 
 .status-bar {
   display: flex;
   justify-content: space-between;
-  margin: 5px;
+  margin: 5px 10px;
 }
 
 /* screen-header */
@@ -69,6 +73,7 @@ body {
 
 .user-profile-text:nth-of-type(1) :last-child {
   font-size: 20px;
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .user-profile-music {
@@ -92,11 +97,14 @@ body {
   display: flex;
   justify-content: space-between;
   margin-top: 15px;
+  cursor: pointer;
 }
 
 #user-profile__sub {
   display: flex;
+  /* transition:1s; */
 }
+
 
 .user-profile-sub-info {
   display: flex;
@@ -156,6 +164,11 @@ body {
 
 /* friends-user-profile */
 
+#friends-user-profile__sub {
+  display: flex;
+  flex-direction: column
+}
+
 .friends-user-profile-main-info {
   display: flex;
   justify-content: space-between;
@@ -212,3 +225,125 @@ body {
   font-size: 30px;
 }
 
+
+/* bigScreen */
+
+#bigScreen {
+  position: absolute;
+  z-index: 99;
+  height: 100vh;
+  background-color: var(--yellow);
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  top: 0;
+}
+
+/* 중간 웹페이지 */
+
+@keyframes hideSplashScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+#splash-screen {
+  background-color: var(--yellow);
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 132px;
+  animation: hideSplashScreen 0.3s ease-in-out forwards;
+  animation-delay: 0.3s;
+  z-index: 99;
+}
+
+/* 하단 아이콘 효과 */
+.screen-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f9f9fa;
+  padding: 10px 50px;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(121, 121, 121, 0.3);
+}
+.screen-footer-list {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+.screen-footer-btn {
+  position: relative;
+  color: #2e363e;
+}
+
+@keyframes notificationAnimation {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-5px) rotateY(360deg);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+.screen-footer__notification {
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+  animation: notificationAnimation 2s ease-in-out infinite;
+}
+
+.badge {
+  background-color: tomato;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+}
+
+@keyframes appearBtnAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.screen-footer-btn {
+  transform: translateY(50px);
+  opacity: 0;
+  animation: appearBtnAnimation 0.3s ease-in-out forwards;
+}
+
+.screen-footer-btn:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.screen-footer-btn:nth-child(3) {
+  animation-delay: 0.5s;
+}
+.screen-footer-btn:last-child {
+  animation-delay: 0.8s;
+}
+
+.screen-footer-link > i.fas:before , .screen-footer-link > i.far:before {
+  font-size: 30px;
+}

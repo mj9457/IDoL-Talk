@@ -5,11 +5,10 @@ function userProfileShow() {
 
     if (profileSub.style.display == "none") {
         arrow.innerHTML = "<i class='fas fa-chevron-up'></i>";
-        profileSub.style.display = "flex";        
+        profileSub.style.display = "flex";
     } else {
         arrow.innerHTML = "<i class='fas fa-chevron-down'></i>";
-        profileSub.style.display = "none";        
-        
+        profileSub.style.display = "none";
     }
 }
 
@@ -28,14 +27,14 @@ function birtydayShow() {
 }
 
 function friendShow() {
-    const birtydayProfile = document.getElementById("birtyday-user-profile__sub");
-    const birtydayBtn = document.getElementById("birtyday-user-profile-bar-btn");
+    const friendsProfile = document.getElementById("friends-user-profile__sub");
+    const friendsBtn = document.getElementById("friends-user-profile-bar-btn");
 
-    if (birtydayProfile.style.display == "none") {
-        birtydayBtn.innerHTML = "<i class='fas fa-chevron-up'></i>";
-        birtydayProfile.style.display = "flex";
+    if (friendsProfile.style.display == "none") {
+        friendsBtn.innerHTML = "<i class='fas fa-chevron-up'></i>";
+        friendsProfile.style.display = "flex";
     } else {
-        birtydayBtn.innerHTML = "<i class='fas fa-chevron-down'></i>";
-        birtydayProfile.style.display = "none";        
+        friendsBtn.innerHTML = "<i class='fas fa-chevron-down'></i>";
+        friendsProfile.style.display = "none";        
     }
 }
