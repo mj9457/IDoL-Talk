@@ -1,7 +1,7 @@
-body {
+body#friendsBody {
   min-width: 465px;
   max-width: 645px;
-  min-height: 1024px;
+  min-height: 1100px;
   color: #2e363e;
   -ms-overflow-style: none;
 }
@@ -36,6 +36,7 @@ body {
 
 .friends-screen {
   padding: 0px var(--horizontal-space);
+  min-height: 1;
 }
 
 /* user-profile */
@@ -172,7 +173,7 @@ body {
 .friends-user-profile-main-info {
   display: flex;
   justify-content: space-between;
-  align-items: center;  
+  align-items: center;
   margin-top: 15px;
 }
 

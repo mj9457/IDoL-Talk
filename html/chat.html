@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../css/styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>니세돌 톡 : 채팅</title>
+</head>
+
+<body id="chatsBody">
+
+    <!-- Big Screen -->
+    <div id="bigScreen">
+        <span>화면을 줄여주세요</span>
+    </div>
+    <!-- //Big Screen -->
+
+    <!-- Top-Bar -->
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>RE:WIND</span>
+            <span class="nowTime">00:00</span>
+            <i class="fab fa-twitch"></i>
+        </div>
+        <div class="status-bar__column">
+            <i class="fas fa-wifi"></i>
+            <span>100%</span>
+            <i class="fas fa-battery-full" style="transform:rotate(270deg);"></i>
+        </div>
+    </div>
+    <!-- //Top-Bar -->
+
+    <!-- Header -->
+    <div class="screen-header">
+        <h1 class="screen-header__title">채팅</h1>
+        <div class="screen-header__icons">
+            <span><i class="fas fa-search"></i></span>
+            <span><i class="far fa-comment-dots"></i></span>
+            <span><i class="fas fa-music"></i></span>
+            <span><i class="fas fa-cog"></i></span>
+        </div>
+    </div>
+    <!-- //Header -->
+
+    <!--  Chat Screen -->
+    <div class="chat-screen">
+        <!-- ADBox -->
+        <div class="showAD">
+            <div class="boxAD">
+                <a class="boxAD" href="#">
+                    <img src="../image/waklogo2.png">
+                    <div class="textBox">
+                        <span class="textAD"> 당신도 이세돌이 될 수 있습니다.</span>
+                        <span class="textAD"><i class="far fa-hand-point-right"></i> 지금 바로 지원하세요 <i
+                                class="far fa-hand-point-left"></i></span>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+        <!-- // ADBox -->
+
+        <!-- ChatBox -->
+        <div id="friends-user-profile__chat-screen">
+
+            <div class="friends-user-profile-chat-info">
+                <div class="friends-user-porifle-profile">
+                    <a href=""><img class="friends-user-profile__chat-img" src="../image/logo.jpg"></a>
+                    <div class="friends-user-profile-text">
+                        <span class="friends-user-profile__chat-name">엔젤님 <i class="fas fa-thumbtack"></i></span>
+                        <span class="friends-user-profile__chat-msg">오빠 대리러 와주라</span>
+                    </div>
+                </div>
+                <div class="user-chat__sub">
+                    <span class="user-chat__sub__date">오후 08:23</span>
+                    <span class="user-chat__sub__num">1</span>
+                </div>
+            </div>
+
+
+            <div class="friends-user-profile-chat-info">
+                <div class="friends-user-porifle-profile">
+                    <img class="friends-user-profile__chat-img" src="../image/logo.jpg">
+                    <div class="friends-user-profile-text">
+                        <span class="friends-user-profile__chat-name">고세구</span>
+                        <span class="friends-user-profile__chat-msg">고양이가 세상을 구한다</span>
+                    </div>
+                </div>
+                <div class="user-chat__sub">
+                    <span class="user-chat__sub__date">오후 19:98</span>
+                    <span class="user-chat__sub__num">1</span>
+                </div>
+            </div>
+            <div class="friends-user-profile-chat-info">
+                <div class="friends-user-porifle-profile">
+                    <img class="friends-user-profile__chat-img" src="../image/logo.jpg">
+                    <div class="friends-user-profile-text">
+                        <span class="friends-user-profile__chat-name">비챤</span>
+                        <span class="friends-user-profile__chat-msg">이세돌 제일검</span>
+                    </div>
+                </div>
+                <div class="user-chat__sub">
+                    <span class="user-chat__sub__date">오후 01:16</span>
+                    <span class="user-chat__sub__num">1</span>
+                </div>
+            </div>
+
+            <div class="friends-user-profile-chat-info">
+                <div class="friends-user-porifle-profile">
+                    <img class="friends-user-profile__chat-img" src="../image/logo.jpg">
+                    <div class="friends-user-profile-text">
+                        <span class="friends-user-profile__chat-name">릴파</span>
+                        <span class="friends-user-profile__chat-msg">릴파형동검</span>
+                    </div>
+                </div>
+                <div class="user-chat__sub">
+                    <span class="user-chat__sub__date">오후 03:09</span>
+                    <span class="user-chat__sub__num">1</span>
+                </div>
+            </div>
+
+            <div class="friends-user-profile-chat-info">
+                <div class="friends-user-porifle-profile">
+                    <img class="friends-user-profile__chat-img" src="../image/logo.jpg">
+                    <div class="friends-user-profile-text">
+                        <span class="friends-user-profile__chat-name">뢴트게늄</span>
+                        <span class="friends-user-profile__chat-msg">뢴르르 억결 금지!</span>
+                    </div>
+                </div>
+                <div class="user-chat__sub">
+                    <span class="user-chat__sub__date">오후 04:22</span>
+                    <span class="user-chat__sub__num">1</span>
+                </div>
+            </div>
+
+            <div class="friends-user-profile-chat-info">
+                <div class="friends-user-porifle-profile">
+                    <img class="friends-user-profile__chat-img" src="../image/logo.jpg">
+                    <div class="friends-user-profile-text">
+                        <span class="friends-user-profile__chat-name">아이네</span>
+                        <span class="friends-user-profile__chat-msg">비둘기야 밥먹자</span>
+                    </div>
+                </div>
+                <div class="user-chat__sub">
+                    <span class="user-chat__sub__date">오후 19:94</span>
+                    <span class="user-chat__sub__num">1</span>
+                </div>
+            </div>
+
+            <div class="friends-user-profile-chat-info">
+                <div class="friends-user-porifle-profile">
+                    <img class="friends-user-profile__chat-img" src="../image/logo.jpg">
+                    <div class="friends-user-profile-text">
+                        <span class="friends-user-profile__chat-name">주르르</span>
+                        <span class="friends-user-profile__chat-msg">무7련</span>
+                    </div>
+                </div>
+                <div class="user-chat__sub">
+                    <span class="user-chat__sub__date">오후 06:10</span>
+                    <span class="user-chat__sub__num">1</span>
+                </div>
+            </div>
+
+            <div class="friends-user-profile-chat-info">
+                <div class="friends-user-porifle-profile">
+                    <img class="friends-user-profile__chat-img" src="../image/logo.jpg">
+                    <div class="friends-user-profile-text">
+                        <span class="friends-user-profile__chat-name">징버거</span>
+                        <span class="friends-user-profile__chat-msg">해냈다 해냈어</span>
+                    </div>
+                </div>
+                <div class="user-chat__sub">
+                    <span class="user-chat__sub__date">오후 10:08</span>
+                    <span class="user-chat__sub__num">1</span>
+                </div>
+            </div>
+
+            <div class="friends-user-profile-chat-info">
+                <div class="friends-user-porifle-profile">
+                    <img class="friends-user-profile__chat-img" src="../image/logo.jpg">
+                    <div class="friends-user-profile-text">
+                        <span class="friends-user-profile__chat-name">이세돌 단톡</span>
+                        <span class="friends-user-profile__chat-msg"></span>
+                    </div>
+                </div>
+                <div class="user-chat__sub">
+                    <span class="user-chat__sub__date">오후 12:27</span>
+                    <span class="user-chat__sub__num">1</span>
+                </div>
+            </div>
+
+            <div class="friends-user-profile-chat-info">
+                <div class="friends-user-porifle-profile">
+                    <img class="friends-user-profile__chat-img" src="../image/logo.jpg">
+                    <div class="friends-user-profile-text">
+                        <span class="friends-user-profile__chat-name">북기님</span>
+                        <span class="friends-user-profile__chat-msg">킹아~!</span>
+                    </div>
+                </div>
+                <div class="user-chat__sub">
+                    <span class="user-chat__sub__date">오후 02:13</span>
+                    <span class="user-chat__sub__num">1</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- // ChatBox -->
+    </div>
+    <!-- // Chat Screen -->
+
+    <!-- Footer -->
+    <div class="screen-footer">
+        <ul class="screen-footer-list" l>
+            <li class="screen-footer-btn">
+                <a class="screen-footer-link" href="nisedol.html">
+                    <i class="far fa-user"></i>
+                </a>
+            </li>
+            <li class="screen-footer-btn">
+                <a class="screen-footer-link" href="chat.html">
+                    <i class="fas fa-comment"></i>
+                    <span class="screen-footer__notification badge">10</span>
+                </a>
+            </li>
+            <li class="screen-footer-btn">
+                <a class="screen-footer-link" href="find.html">
+                    <i class="fas fa-search"></i>
+                </a>
+            </li>
+            <li class="screen-footer-btn">
+                <a class="screen-footer-link" href="more.html">
+                    <i class="fas fa-ellipsis-h"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- //Footer -->
+
+
+    <!-- Scripts -->
+    <script src="/js/toggle.js"></script>
+    <script src="../js/time.js"></script>
+    <script src="../js/screen.js"></script>
+</body>
+
+</html>
